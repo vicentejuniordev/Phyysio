@@ -1,0 +1,32 @@
+@import '../../styles/global.css';
+
+.text-home{
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    height: 100vh;
+    margin-left: 350px;
+    margin-top: 100px;
+    font-family: "Bree Serif", serif;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: 700;
+    color: #5170ff;
+
+}
+
+.text-simple{
+    font-size: 20px;
+    color: #d395e5;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+
+.highlight {
+  color: #cb6ce6;
+}
