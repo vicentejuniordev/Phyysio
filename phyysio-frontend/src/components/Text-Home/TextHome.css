@@ -1,5 +1,14 @@
 @import '../../styles/global.css';
 
+.text-home-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 300;
+
+}
+
 .text-home{
     display: flex;
     width: 600px;
@@ -21,7 +30,7 @@
 
 .text-simple{
     font-size: 20px;
-    color: #d395e5;
+    color: #d061f2;
     font-weight: lighter;
     font-style: normal;
 }
@@ -29,4 +38,11 @@
 
 .highlight {
   color: #cb6ce6;
+}
+
+.home-image {
+  width: 750px;
+  height: 750px;
+  margin-bottom: 450px;
+
 }
