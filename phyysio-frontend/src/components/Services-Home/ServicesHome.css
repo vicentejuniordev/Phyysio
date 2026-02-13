@@ -1,0 +1,25 @@
+@import '../../styles/global.css';
+
+.title{
+    font-size: 2.0rem;
+    margin-bottom: 1rem;
+    font-family: "Bree Serif", serif;
+}
+
+.services-home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+
+.services{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
