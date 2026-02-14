@@ -1,0 +1,30 @@
+@import '../../styles/global.css';
+
+.card-forwhom-container{
+    background-color:  #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    padding: 20px 24px;
+    cursor: pointer;
+    width: 25%;
+
+
+}
+
+.card-forwhom-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+}
+
+.card-forwhom-title{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #5170ff;
+}
+
+.card-forwhom-description{
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
