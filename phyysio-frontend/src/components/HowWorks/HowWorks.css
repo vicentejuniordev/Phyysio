@@ -1,0 +1,70 @@
+@import '../../styles/global.css';
+
+.how-it-works {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0px;
+  min-height: 100px;
+  justify-content: flex-start;
+  padding-top: 50px;
+  gap: 50px;
+}
+
+h2{
+    color: #cb6ce6;
+    font-size: 28px;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-self: flex-start;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  width: 3px;
+  background-color: #cb6ce6;
+}
+
+.step {
+  display: flex;
+  gap: 24px;
+  position: relative;
+}
+
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #cb6ce6;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  z-index: 1;
+}
+
+.content h3 {
+  margin: 0;
+  color: #cb6ce6;
+  font-size: 18px;
+}
+
+.content p {
+  margin-top: 6px;
+  color: #4b5563;
+  font-size: 15px;
+  max-width: 420px;
+}
