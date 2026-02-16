@@ -29,6 +29,22 @@ function HowWorks() {
             <p>Tenha controle total da clínica em um único sistema.</p>
           </div>
         </div>
+
+        <div class="step">
+          <span class="circle">4</span>
+          <div class="content">
+            <h3>Histórico e evolução do paciente</h3>
+            <p>Visualize o progresso dos pacientes com registros claros e acessíveis.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <span class="circle">5</span>
+          <div class="content">
+            <h3>Organização e segurança das informações</h3>
+            <p>Mantenha todos os dados protegidos e disponíveis sempre que precisar.</p>
+          </div>
+        </div>
       </div>
     </section>
   );
