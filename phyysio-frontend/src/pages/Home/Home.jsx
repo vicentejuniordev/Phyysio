@@ -4,6 +4,7 @@ import TextHome from '../../components/Text-Home/TextHome';
 import ServicesHome from '../../components/Services-Home/ServicesHome';
 import ForWhom from '../../components/ForWhom/ForWhom';
 import HowWorks from '../../components/HowWorks/HowWorks';
+import BenefitsSection from '../../components/BenefitsSection/BenefitsSection';
 function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ function Home() {
         <ForWhom/>
         <HowWorks/>
       </div>
+      <BenefitsSection/>
     </>
   );
 }
