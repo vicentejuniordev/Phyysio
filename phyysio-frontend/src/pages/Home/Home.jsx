@@ -6,6 +6,7 @@ import ForWhom from '../../components/ForWhom/ForWhom';
 import HowWorks from '../../components/HowWorks/HowWorks';
 import BenefitsSection from '../../components/BenefitsSection/BenefitsSection';
 import ContactSection from '../../components/ContactSection/ContactSection';
+import Footer from '../../components/Footer/Footer';
 function Home() {
   return (
     <>
@@ -18,6 +19,7 @@ function Home() {
       </div>
       <BenefitsSection/>
       <ContactSection/>
+      <Footer/>
     </>
   );
 }
