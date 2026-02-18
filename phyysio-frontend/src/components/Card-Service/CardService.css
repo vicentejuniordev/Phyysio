@@ -1,4 +1,4 @@
-@import '../../styles/global.css';
+@import "../../styles/global.css";
 
 .card-service {
   display: flex;
@@ -10,36 +10,32 @@
   width: 300px;
   height: 300px;
   border: 1px solid #e5e7eb;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
   border-radius: 16px;
-  background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    #f8f9ff 100%
-  );
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9ff 100%);
   gap: 16px;
   cursor: pointer;
-  padding: 10px;
+  padding: 30px;
 }
 
 .card-service:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
 }
 
-.image-card{
+.image-card {
   width: 60px;
   margin-bottom: 8px;
 }
 
-.text-card{
-    text-align: justify;
-    font-size: 18px;
-    color: #4b5563;
+.text-card {
+  text-align: justify;
+  font-size: 15px;
+  color: #4b5563;
 }
 
-.title-card{
-    text-align: center;
-    color: #7b5cff;
-
+.title-card {
+  text-align: center;
+  color: #7b5cff;
+  font-size: 20px;
 }

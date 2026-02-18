@@ -5,6 +5,7 @@ import ServicesHome from '../../components/Services-Home/ServicesHome';
 import ForWhom from '../../components/ForWhom/ForWhom';
 import HowWorks from '../../components/HowWorks/HowWorks';
 import BenefitsSection from '../../components/BenefitsSection/BenefitsSection';
+import ContactSection from '../../components/ContactSection/ContactSection';
 function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ function Home() {
         <HowWorks/>
       </div>
       <BenefitsSection/>
+      <ContactSection/>
     </>
   );
 }
