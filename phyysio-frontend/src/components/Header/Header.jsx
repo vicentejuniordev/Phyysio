@@ -7,9 +7,9 @@ function Header(){
               <img className="logo" src={logo} alt="Phyysio Logo" />
            <div className='header-words'>
              <a className='word'href="#text-home-container"><p >Início</p></a>
-             <a className='word' href=""><p style={{color:'#cb6ce6'}}>Serviços</p></a>
-             <a className='word' href=""><p>Beneficios</p></a>
-             <a className='word' href=""><p style={{color:'#cb6ce6'}}>Contato</p></a>
+             <a className='word' href="#services-home-container"><p style={{color:'#cb6ce6'}}>Serviços</p></a>
+             <a className='word' href="#benefits-section"><p>Beneficios</p></a>
+             <a className='word' href="#contact-section"><p style={{color:'#cb6ce6'}}>Contato</p></a>
            </div>
           </div>
         </>

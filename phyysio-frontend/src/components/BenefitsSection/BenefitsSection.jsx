@@ -3,7 +3,7 @@ import './BenefitsSection.css';
 
 function BenefitsSection() {
   return (
-    <section className="benefits-section">
+    <section id='benefits-section'  className="benefits-section">
       <h2>O que o Phyysio traz para o seu dia a dia</h2>
 
       <div className="benefits-grid">
