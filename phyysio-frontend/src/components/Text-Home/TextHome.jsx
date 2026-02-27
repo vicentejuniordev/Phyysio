@@ -4,7 +4,7 @@ import image from "../../assets/img/home-image.png";
 function TextHome() {
   return (
     <>
-      <div className="text-home-container">
+      <div id="text-home-container" className="text-home-container">
         <div className="text-home">
           <h1 className="title">
             Bem-vindo à Ph<span className="highlight">yy</span>sio
