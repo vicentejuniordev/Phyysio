@@ -42,3 +42,15 @@
   height: 750px;
 
 }
+
+.primary-btn{
+    font-family: "Bree Serif", serif;
+    background-color: #5170ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
