@@ -1,25 +1,36 @@
 @import '../../styles/global.css';
 
-.logo{
-    width: 500px;
-    margin-right: 400px;
+body {
+  margin: 0;
 }
 
-.header{
-    padding-top: 10px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #ffffff;
-    border-bottom: 2px solid #d2caca;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+
+.logo {
+    width: 100%;
+}
+
+.header {
+  width: 100%;
+  padding: 10px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 2px solid #d2caca;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .header-words{
-    display: flex;
-    gap: 100px;
+  display: flex;
+  gap: 50px;
+}
+
+.menu-icon{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
 }
 
 .word{
@@ -28,4 +39,26 @@
     font-size: larger;
     cursor: pointer;
     text-decoration: none;
+}
+
+@media screen and (max-width:480px) {
+
+ .header{
+    height: 60px;
+    padding: 10px 0px ;
+ }
+
+ .header-words{
+    display: none;
+}
+
+ .logo {
+    max-width: 200px;
+}
+
+ .menu-icon{
+    display: flex;
+}
+
+
 }
