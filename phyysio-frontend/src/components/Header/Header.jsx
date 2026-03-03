@@ -1,4 +1,4 @@
-import logo from "../../assets/img/phyysio-logo-2.png";
+import logo from "../../assets/img/phyysio-logo-.png";
 import "./Header.css";
 import menuImage from "../../assets/img/menu.png";
 function Header() {

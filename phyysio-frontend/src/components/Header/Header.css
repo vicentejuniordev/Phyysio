@@ -6,12 +6,13 @@ body {
 
 
 .logo {
-    width: 100%;
+  width: 20%;
 }
 
 .header {
   width: 100%;
   padding: 10px 32px;
+  height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,6 +42,50 @@ body {
     text-decoration: none;
 }
 
+
+@media screen and (max-width:1024px) {
+
+ .header{
+    height: 60px;
+    padding: 10px 0px ;
+    width: 100%;
+    padding-right: 40px ;
+ }
+
+
+ .logo {
+    width: 30%;
+}
+
+
+}
+
+
+@media screen and (max-width:720px) {
+
+ .header{
+    height: 60px;
+    padding: 10px 0px ;
+    width: 100%;
+ }
+
+ .header-words{
+    display: none;
+}
+
+ .logo {
+    width: 50%;
+}
+
+ .menu-icon{
+    display: flex;
+    margin-left: 40px;
+}
+
+
+}
+
+
 @media screen and (max-width:480px) {
 
  .header{
@@ -53,12 +98,16 @@ body {
 }
 
  .logo {
-    max-width: 200px;
+    width: 50%;
 }
 
  .menu-icon{
     display: flex;
+    margin-left: 40px;
 }
 
 
 }
+
+
+
