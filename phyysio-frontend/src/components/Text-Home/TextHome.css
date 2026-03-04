@@ -53,3 +53,24 @@
     cursor: pointer;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 1024px){
+    .text-home-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .text-home{
+        width: 100%;
+        margin-left: 0px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-image{
+        width: 50%;
+        height: auto;
+    }
+}
