@@ -5,4 +5,15 @@
   justify-content: center;
   gap: 150px;
   padding-top: 50px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .for-whom-how-section {
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
 }
