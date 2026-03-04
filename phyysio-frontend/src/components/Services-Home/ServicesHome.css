@@ -23,3 +23,14 @@
     display: flex;
     gap: 30px;
 }
+
+@media screen and (max-width: 1024px) {
+    .services-home-container {
+        flex-direction: column;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+    
+}
