@@ -1,6 +1,7 @@
 @import '../../styles/global.css';
 
 .contact-section {
+  display: flex;
   padding: 100px 0;
   background-color: rgba(203, 108, 230, 0.06);
   font-family: "Bree Serif", serif;
@@ -66,4 +67,24 @@
 
 .contact-form button:hover {
   background-color: #5170ff;
+}
+
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-text h2 {
+  font-size: 26px;
+  color: #5170ff;
+  margin-bottom: 16px;
+  }
+
+  .contact-text p {
+  font-size: 16px;
+  color: #4b5563;
+  text-align: center;
+  } 
+
 }
