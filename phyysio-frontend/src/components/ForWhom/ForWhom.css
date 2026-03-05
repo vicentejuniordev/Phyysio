@@ -9,3 +9,11 @@
     font-family: "Bree Serif", serif;
     gap: 20px;
 }
+
+
+@media screen and (max-width: 768px) {
+  .for-whom {
+    padding: 30px 10px;
+    text-align: center;
+  }
+}
