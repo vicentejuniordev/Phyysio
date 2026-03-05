@@ -69,3 +69,16 @@
 span{
  color: #cb6ce6;
 }
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .footer-brand p {
+    max-width: none;
+  }
+}
