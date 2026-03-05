@@ -20,14 +20,6 @@
   margin: 0 auto;
 }
 
-.benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .benefit-card {
   background-color: #ffffff;
   border-radius: 16px;
@@ -56,4 +48,36 @@
   font-size: 15px;
   color: #4b5563;
   line-height: 1.5;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Celular */
+@media screen and (max-width: 600px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .benefits-section h2 {
+    font-size: 24px;
+  }
+
+  .benefit-card {
+    max-width: 200px;
+  }
+
+  .benefit-card h3 {
+    font-size: 14px;
+  }
+
+  .benefit-card p {
+    font-size: 13px;
+  }
 }
