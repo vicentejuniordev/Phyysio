@@ -1,9 +1,9 @@
 import { Router } from "express";
-import adminController from "../controllers/admin-controller.js";
+import adminController from "../controllers/admin/admin-controller.js";
 
 
 const adminRoutes = Router();
 
-adminRoutes.get("/admin/dashboard", adminController);
+adminRoutes.get("/admin", adminController);
 
 export default adminRoutes;
