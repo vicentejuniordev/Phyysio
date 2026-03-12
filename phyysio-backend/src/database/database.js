@@ -1,10 +1,7 @@
-
 import { Pool } from 'pg';
 
 
-console.log(process.env.POSTGRES_USER);
-
-async function getClient(){
+async function getPool(){
     const pool = new Pool({
         user: process.env.POSTGRES_USER,
         host: 'localhost',
@@ -15,5 +12,6 @@ async function getClient(){
     return pool;
 }
 
-export default getClient;
+export default getPool;
 
+const pool = await getPool();
