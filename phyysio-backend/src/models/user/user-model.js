@@ -13,3 +13,6 @@ async function createUser(userData) {
     }
 }
 
+export default {
+    createUser,
+};
