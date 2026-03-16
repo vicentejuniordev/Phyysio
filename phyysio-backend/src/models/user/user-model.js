@@ -39,10 +39,25 @@ async function updateUser(cpf, userData) {
     }
 }
 
+async function deleteUser(cpf) {
+    try {
+        const pool = await getPool();
+        const query = 'DELETE FROM users WHERE cpf = $1 RETURNING *';
+        const values = [cpf];
+        const result = await pool.query(query, values);
+        return result.rows[0];
+    } catch (error) {
+        console.error('Error deleting user:', error);
+        throw error;
+    }
+}
+
 
 
 export default {
     createUser,
     getUserByCpf,
-    updateUser
+    updateUser,
+    deleteUser
 };
+
