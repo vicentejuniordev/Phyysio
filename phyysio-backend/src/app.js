@@ -1,10 +1,10 @@
 import express from 'express';
-import adminRoutes from './routes/admin-routes.js';
+import userRoutes from './routes/user-routes.js';
 
 const app = express();
 
 app.use(express.json());
-app.use(adminRoutes);
+app.use(userRoutes);
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
