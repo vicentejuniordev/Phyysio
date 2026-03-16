@@ -54,7 +54,7 @@ async function deleteUser(cpf) {
 
 
 
-export default {
+export {
     createUser,
     getUserByCpf,
     updateUser,
