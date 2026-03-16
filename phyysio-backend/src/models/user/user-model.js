@@ -13,9 +13,20 @@ async function createUser(userData) {
     }
 }
 
-
-
+async function getUserByCpf(cpf) {
+    try {
+        const pool = await getPool();
+        const query = 'SELECT * FROM users WHERE cpf = $1';
+        const values = [cpf];
+        const result = await pool.query(query, values);
+        return result.rows[0];
+    } catch (error) {
+        console.error('Error fetching user by CPF:', error);
+        throw error;
+    }
+}   
 export default {
     createUser,
-    getUserByEmail,
+    getUserByCpf,
 };
+
