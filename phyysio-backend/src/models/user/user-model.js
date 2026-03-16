@@ -25,8 +25,24 @@ async function getUserByCpf(cpf) {
         throw error;
     }
 }   
+
+async function updateUser(cpf, userData) {
+    try {
+        const pool = await getPool();
+        const query = 'UPDATE users SET name = $1, email = $2, password = $3 WHERE cpf = $4 RETURNING *';
+        const values = [userData.name, userData.email, userData.password, cpf];
+        const result = await pool.query(query, values);
+        return result.rows[0];
+    } catch (error) {
+        console.error('Error updating user:', error);
+        throw error;
+    }
+}
+
+
+
 export default {
     createUser,
     getUserByCpf,
+    updateUser
 };
-
