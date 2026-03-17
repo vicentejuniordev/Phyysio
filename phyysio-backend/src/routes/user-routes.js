@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { createUserController } from "../controllers/admin/admin-controller.js";
-import { getUserByCpfController } from "../controllers/admin/admin-controller.js";
-import { updateUserController } from "../controllers/admin/admin-controller.js";
-import { deleteUserController } from "../controllers/admin/admin-controller.js";
+import { createUserController } from "../controllers/users/user-controller.js";
+import { getUserByCpfController } from "../controllers/users/user-controller.js";
+import { updateUserController } from "../controllers/users/user-controller.js";
+import { deleteUserController } from "../controllers/users/user-controller.js";
 
 
 const userRoutes = Router();
