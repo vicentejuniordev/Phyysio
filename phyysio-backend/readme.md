@@ -19,12 +19,25 @@ O projeto é estruturado em camadas, seguindo o padrão MVC (Model-View-Controll
 ```bash
 cd phyysio-backend
 ```
-2. Defina as variáveis de ambiente necessárias no arquivo `.env` (exemplo disponível em `.env.example`):
+2. Instale as dependências do projeto:
+```bash
+npm install
+```
+
+3. Defina as variáveis de ambiente necessárias no arquivo `.env` (exemplo disponível em `.env.example`):
 ```bash
 cp .env.example .env
 ```
-3. Inicie os containers usando Docker Compose:
+4. Inicie os containers usando Docker Compose:
 ```bash
 docker-compose up -d
 ```
-4. A **API** estará disponível em `http://localhost:3000` por padrão caso não defina nenhum valor diferente.
+5. Faça as migrações do banco de dados para criar as tabelas necessárias:
+```bash
+npm run migrate
+```
+6. Inicie a aplicação:
+```bash
+npm run dev
+```
+7. A **API** estará disponível em `http://localhost:3000` por padrão caso não defina nenhum valor diferente.
