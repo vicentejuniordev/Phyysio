@@ -11,4 +11,5 @@ userRoutes.post("/api/users", createUserController );
 userRoutes.get("/api/users/:cpf", getUserByCpfController);
 userRoutes.put("/api/users/:cpf", updateUserController);
 userRoutes.delete("/api/users/:cpf", deleteUserController);
+
 export default userRoutes;
