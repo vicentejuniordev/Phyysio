@@ -26,10 +26,40 @@ async function deleteSession(cpf) {
     }
 }
 
+async function getSessionByCpf(cpf) {
+    try {
+        const pool = await getPool();
+        const query = 'SELECT * FROM sessions WHERE user_cpf = $1';
+        const values = [cpf];
+        const result = await pool.query(query, values);
+        return result.rows[0];
+    } catch (error) {
+        console.error('Error fetching session by CPF:', error);
+        throw error;
+    }
+}
+
+async function updateSession(cpf, sessionData) {
+    try {
+        const pool = await getPool();
+        const query = 'UPDATE sessions SET quantity = $1, observations = $2 WHERE user_cpf = $3 RETURNING *';
+        const values = [sessionData.quantity, sessionData.observations, cpf];
+        const result = await pool.query(query, values);
+        return result.rows[0];
+    } catch (error) {
+        console.error('Error updating session:', error);
+        throw error;
+    }
+}
 
 export {
     createSession,
-    deleteSession
-}
+    deleteSession,
+    getSessionByCpf,
+    updateSession
+}   
+
+
+
 
 
