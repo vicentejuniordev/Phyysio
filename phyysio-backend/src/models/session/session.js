@@ -12,3 +12,24 @@ async function createSession(sessionData) {
         throw error;
     }  
 }
+
+
+async function deleteSession(cpf) {
+    try {
+        const pool = await getPool();
+        const query = 'DELETE FROM sessions WHERE user_cpf = $1';
+        const values = [cpf];
+        await pool.query(query, values);
+    } catch (error) {
+        console.error('Error deleting session:', error);
+        throw error;
+    }
+}
+
+
+export {
+    createSession,
+    deleteSession
+}
+
+
