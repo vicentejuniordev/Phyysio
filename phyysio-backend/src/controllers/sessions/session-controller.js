@@ -1,5 +1,6 @@
 import { createSession } from "../../models/session/session.js";
 import { getSessionByCpf } from "../../models/session/session.js";
+import { updateSession } from "../../models/session/session.js";
 
 async function createSessionController(req,res) {
     const sessionData = req.body;
@@ -25,8 +26,24 @@ async function getSessionController(req,res) {
     }
 }
 
+async function updateSessionController(req,res) {
+    const cpf = req.params.id;
+    const sessionData = req.body;
+    try {
+        const updatedSession = await updateSession(cpf, sessionData);
+        if (updatedSession) {
+            res.status(200).json(updatedSession);
+        } else {
+            res.status(404).json({ error: "Session not found" });
+        }
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
 
 export {
-     createSessionController, getSessionController
+     createSessionController, getSessionController,
+     updateSessionController
 
  };
