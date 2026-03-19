@@ -1,6 +1,7 @@
 import { createSession } from "../../models/session/session.js";
 import { getSessionByCpf } from "../../models/session/session.js";
 import { updateSession } from "../../models/session/session.js";
+import { deleteSession } from "../../models/session/session.js";
 
 async function createSessionController(req,res) {
     const sessionData = req.body;
@@ -41,9 +42,19 @@ async function updateSessionController(req,res) {
     }
 }
 
+async function deleteSessionController(req,res) {
+    const cpf = req.params.id;
+    try {
+        await deleteSession(cpf);
+        res.status(204).send();
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
 
 export {
-     createSessionController, getSessionController,
-     updateSessionController
-
+    createSessionController,
+    getSessionController,
+    updateSessionController,
+    deleteSessionController
  };
