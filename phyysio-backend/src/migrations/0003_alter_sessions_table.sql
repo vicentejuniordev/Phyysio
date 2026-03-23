@@ -1,0 +1,3 @@
+
+ALTER TABLE sessions
+ADD COLUMN is_completed BOOLEAN DEFAULT TRUE;
