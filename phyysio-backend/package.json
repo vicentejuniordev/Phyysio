@@ -13,10 +13,14 @@
     "docker:down": "docker compose -f infra/compose.yaml down",
     "docker:stop": "docker compose -f infra/compose.yaml stop",
     "docker:restart": "docker compose -f infra/compose.yaml restart",
-    "migrate":"node --env-file=.env src/database/migrate.js"
+    "migrate": "node --env-file=.env src/database/migrate.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "dependencies": {
     "express": "^5.2.1",
     "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0"
   }
 }
